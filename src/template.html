@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>IMO 難易度順リスト</title>
+  </head>
+  <body>
+    <h2>IMO 難易度順リスト</h2>
+    <h4>参考リンク</h4>
+    <ul>
+      <li><a href="http://web.cs.elte.hu/~nagyzoli/compendium.pdf" target="_blank">The IMO compendium</a></li>
+      <li><a href="https://www.imo-official.org/default.aspx" target="_blank">International Mathematical Olympiad</a></li>
+    </ul>
+    <hr />
+    <h4>リスト</h4>
+    <p>カッコ内は全参加者の平均点（7点満点で換算時）</p>
+    <ul>
+      {% for record in records %}
+        <li>{{ record[1] }} P{{ record [2] }} ({{ record[0] }})</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
