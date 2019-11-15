@@ -9,15 +9,16 @@
     <h4>参考リンク</h4>
     <ul>
       <li><a href="http://web.cs.elte.hu/~nagyzoli/compendium.pdf" target="_blank">The IMO compendium</a></li>
+      <li><a href="https://artofproblemsolving.com/community/c13_contest_collections" target="_blank">Art of Problem Solving - Contest Collections</a></li>
       <li><a href="https://www.imo-official.org/default.aspx" target="_blank">International Mathematical Olympiad</a></li>
     </ul>
     <hr />
     <h4>リスト</h4>
     <p>カッコ内は全参加者の平均点（7点満点で換算時）</p>
-    <ul>
+    <ol>
       {% for record in records %}
-        <li>{{ record[1] }} P{{ record [2] }} ({{ record[0] }})</li>
+        <li>{{ record[1] }} P{{ record[2]+1 }} ({{ record[0] }})</li>
       {% endfor %}
-    </ul>
+    </ol>
   </body>
 </html>
